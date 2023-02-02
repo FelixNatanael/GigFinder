@@ -4,3 +4,9 @@
     height: 812px;
 
 }
+.back2 {
+    background: url(../image/utama.png);
+    background-size: cover;
+    height: 100vh;
+
+}
