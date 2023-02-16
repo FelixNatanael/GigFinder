@@ -10,3 +10,21 @@
     height: 100vh;
 
 }
+.back3 {
+    background: url(../image/regis.png);
+    background-size: cover;
+    height: 100vh;
+}
+.back4 {
+    background: url(../image/login.png);
+    background-size: cover;
+    height: 100vh;
+}
+input:focus + label, input:not(:placeholder-shown) + label{
+    transform: translateY(-1em) scale(0.8);
+}
+label {
+    left: 0;
+    transition: transform 0.2s ease-in-out;
+    cursor: text;
+}

@@ -15,18 +15,18 @@ function landing() {
           Need Freelance <br /> for your work? <br /> We got you <br /> Covered!{" "}
           <br />
         </span>
+        <Link to="/login">
         <button className="bg-[#0075FF] text-white mt-5 w-24 h-10 rounded-lg font-medium tracking-wider">
           Login
         </button>
+        </Link>
         <br />
         <br />
-        <Link to="login">
           <span className="text-[#A7A7A7] font-semibold">
             {" "}
             Don't have an account?
           </span>
-        </Link>
-        <Link to="register">
+        <Link to="/register">
           <span className="text-[#4098FF] font-semibold">
             {" "}
             Sign up for free

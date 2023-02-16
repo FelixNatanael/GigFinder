@@ -8,7 +8,7 @@ function Lowongan() {
   return (
     <div>
       <Nav />
-      <div className="px-20">
+      <div className="px-20 mt-20">
         <div className="relative w-full">
           <input
             type="text"
