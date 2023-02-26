@@ -1,35 +1,54 @@
-import React from 'react'
-import { Link } from "react-router-dom"
+import { React, useState} from "react";
+import { Link } from "react-router-dom";
+import Foto from "../image/foto1.png";
+import Popup from "reactjs-popup";
+
 
 function Nav() {
+  const [isSecondPopupOpen, setIsSecondPopupOpen] = useState(false);
   return (
     <div className="bg-[#3B89FD] h-[65px] w-full text-white fixed top-0 left-0 z-50">
-        <nav className="py-3">
-          <Link to="/">
-        <label className="text-2xl cursor-pointer leading-[40px] font-bold px-5">
-          GigFinder
-        </label>
+      <nav className="py-3">
+        <Link to="/">
+          <label className="text-2xl cursor-pointer leading-[40px] font-bold px-5">
+            GigFinder
+          </label>
         </Link>
         <ul className="float-right font-semibold text-lg">
-          <div className="flex m-2">
-            <li className="px-2">
-              <Link to="/Home">Home</Link>
+          <div className="flex">
+            <div className="flex m-2">
+              <li className="px-2">
+                <Link to="/Home">Home</Link>
+              </li>
+              <li className="px-2">
+                <Link to="/lowongan">Lowongan</Link>
+              </li>
+            </div>
+            <li className="pr-5">
+              <Popup
+                trigger={
+                  <button>
+                    <img src={Foto} className="w-[44px] rounded-full" alt="" />
+                  </button>
+                }
+                position="bottom right"
+              >
+                <div className="w-60 h-32 drop-shadow-xl bg-white flex flex-col py-3 px-5">
+                  <span className="font-semibold text-lg">Hi, Felix Na</span>
+                  <span className="font-medium">Contributor</span>
+                  <Link to='/'>
+                      <button className="bg-blue-500 w-28 h-10 rounded-full mt-2 mx-auto text-white font-semibold">
+                        Logout
+                      </button>
+                      </Link>
+                </div>
+              </Popup>
             </li>
-            <li className="px-2">
-              <Link to="/lowongan">
-              Lowongan
-              </Link>
-              </li>
-            <li className="px-2">
-              <Link to="/">
-              Logout
-              </Link>
-              </li>
           </div>
         </ul>
       </nav>
     </div>
-  )
+  );
 }
 
-export default Nav
+export default Nav;
