@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "/GigaFinder/gigfinder/src/css/index.css";
+import "/GigFinder/frontend/src/css/index.css";
 
 function Login() {
   return (
@@ -26,7 +26,7 @@ function Login() {
           ></input>
           <label
             htmlFor="Email"
-            className="text-[#9A9A9A] absolute py-[18px] px-4 pointer-events origin-[10px]"
+            className="text-[#9A9A9A] absolute py-[18px] px-4 pointer-events origin-[10px] font-medium"
           >
             Email
           </label>
@@ -41,7 +41,7 @@ function Login() {
           ></input>
           <label
             htmlFor="Password"
-            className="text-[#9A9A9A] absolute py-[18px] px-4 pointer-events origin-[10px]"
+            className="text-[#9A9A9A] absolute py-[18px] px-4 pointer-events origin-[10px] font-medium"
           >
             Password
           </label>

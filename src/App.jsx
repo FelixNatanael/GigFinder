@@ -5,6 +5,7 @@ import Lowongan from "./page/Lowongan"
 import Register from "./page/auth/Register";
 import Login from "./page/auth/Login";
 import Apply from "./page/Apply";
+import Job from "./page/Job";
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
               <Route path="/register" element={<Register />}></Route>
               <Route path="/login" element={<Login />}></Route>
               <Route path="/apply" element={<Apply />}></Route>
+              <Route path="/job" element={<Job />}></Route>
             </Routes>
           </Router>
           </>

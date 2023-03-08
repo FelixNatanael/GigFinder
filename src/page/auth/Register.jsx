@@ -1,5 +1,5 @@
 import React from "react";
-import "/GigaFinder/gigfinder/src/css/index.css";
+import "/GigFinder/frontend/src/css/index.css";
 import { Link } from "react-router-dom";
 
 function Register() {
@@ -25,7 +25,7 @@ function Register() {
             ></input>
             <label
               htmlFor="FirstName"
-              className="text-[#9A9A9A] absolute py-[18px] px-4 pointer-events origin-[10px]"
+              className="text-[#9A9A9A] absolute py-[18px] px-4 pointer-events origin-[10px] font-medium"
             >
               First Name
             </label>
@@ -39,7 +39,7 @@ function Register() {
             ></input>
             <label
               htmlFor="SecondName"
-              className="text-[#9A9A9A] absolute py-[18px] px-4 pointer-events origin-[10px]"
+              className="text-[#9A9A9A] absolute py-[18px] px-4 pointer-events origin-[10px] font-medium" 
             >
               Second Name
             </label>
@@ -55,7 +55,7 @@ function Register() {
           ></input>
           <label
             htmlFor="Email"
-            className="text-[#9A9A9A] absolute py-[18px] px-4 pointer-events origin-[10px]"
+            className="text-[#9A9A9A] absolute py-[18px] px-4 pointer-events origin-[10px] font-medium"
           >
             Email
           </label>
@@ -70,7 +70,7 @@ function Register() {
           ></input>
           <label
             htmlFor="Password"
-            className="text-[#9A9A9A] absolute py-[18px] px-4 pointer-events origin-[10px]"
+            className="text-[#9A9A9A] absolute py-[18px] px-4 pointer-events origin-[10px] font-medium"
           >
             Password
           </label>
