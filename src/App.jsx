@@ -6,7 +6,7 @@ import Register from "./page/auth/Register";
 import Login from "./page/auth/Login";
 import Apply from "./page/Apply";
 import Job from "./page/Job";
-
+import Inbox from "./page/Inbox";
 function App() {
     return (
           <>
@@ -19,6 +19,7 @@ function App() {
               <Route path="/login" element={<Login />}></Route>
               <Route path="/apply" element={<Apply />}></Route>
               <Route path="/job" element={<Job />}></Route>
+              <Route path="/inbox" element={<Inbox />}></Route>
             </Routes>
           </Router>
           </>

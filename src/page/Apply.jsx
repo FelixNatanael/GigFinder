@@ -3,17 +3,13 @@ import { BsArrowLeft } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import Popup from "reactjs-popup";
 import Centang from "../image/centang.png";
+import Nav from "../component/Nav";
 
 function Apply() {
   return (
     <div className="overflow-hidden">
-      <div className="font-semibold text-4xl flex flex-row py-7 px-10">
-        <Link to="/lowongan">
-          <BsArrowLeft />
-        </Link>
-        <span className="ml-5">Web Programming</span>
-      </div>
-      <div className="border w-auto border-black mx-24 mb-10 h-screen pl-10 py-6 flex flex-col overflow-hidden">
+      <Nav />
+      <div className="border w-auto border-black mx-40 mb-10 h-screen pl-10 py-6 mt-28 flex flex-col overflow-hidden">
         <span className="font-semibold text-3xl">Metro Computer</span>
         <span className="font-medium mt-2 text-2xl">
           Our company needs people who can Web Programming
@@ -46,6 +42,7 @@ function Apply() {
         <input
           type="email"
           className="mt-2 border w-full outline-none rounded px-4 h-9"
+          placeholder="Email"
           required
         />
         <div className=" invisible w-[900px]">lol</div>
